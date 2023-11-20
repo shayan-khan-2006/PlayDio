@@ -1,0 +1,974 @@
+@media (max-width: 900px) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 100%;
+        height: 100%;
+        overflow-x: clip;
+    }
+
+    .nav-left .menu-icon {
+        display: none;
+    }
+
+    .sidebar {
+        width: 6%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 80px;
+        z-index: 3;
+        padding-right: .2%;
+        overflow-y: unset;
+    }
+
+    .sidebar a {
+        position: relative;
+        padding-left: 26%;
+        display: flex;
+        align-items: center;
+        min-width: fit-content;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar a.active {
+        border-left: 8px solid var(--main-color);
+        padding-left: calc(26% - 8px);
+        background: rgba(0, 0, 0, 0.13);
+    }
+
+    .sidebar a:hover>i,
+    .sidebar a:hover>svg {
+        color: var(--black);
+    }
+
+    .sidebar a:nth-child(7),
+    .sidebar a:nth-child(8),
+    .sidebar a:nth-child(9) {
+        display: none;
+    }
+
+    .sidebar a.customize {
+        display: block;
+    }
+
+    .sidebar a.customize #customize-pop-btn {
+        display: none;
+    }
+
+    .sidebar a i,
+    .sidebar a svg {
+        font-size: 18px;
+        width: 23px;
+        height: 23px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 2%;
+        padding-left: 2%;
+        z-index: 2 !important;
+    }
+
+    .sidebar a p {
+        font-size: 12px;
+        position: absolute;
+        top: 20px;
+        left: 100%;
+        background: var(--black);
+        color: var(--white) !important;
+        padding: 6px 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        letter-spacing: 1px;
+        z-index: 2 !important;
+        display: none;
+    }
+
+    .sidebar a:hover>p {
+        display: block;
+    }
+
+    .sidebar h3 {
+        display: none;
+    }
+
+    .sidebar hr {
+        width: 50%;
+        margin-bottom: 25px;
+        display: none;
+    }
+
+    .sidebar .subscription {
+        display: none;
+    }
+
+    .container,
+    .large-container {
+        padding-left: 7%;
+        padding-right: 5%;
+    }
+
+    .nav-right i {
+        display: none;
+    }
+
+    .nav-right .user-icon {
+        display: block;
+        width: 30px;
+    }
+
+    /* video page */
+    .play-container {
+        padding-left: 1.5%;
+    }
+
+    .nav-middle .search-box input {
+        width: 300px;
+    }
+
+    .nav-right .video-icon {
+        margin-left: 10px;
+    }
+
+    #sign_in_button {
+        padding: 5px 8px;
+        margin-left: 5px;
+    }
+
+    .options button :where(i, svg, span) {
+        height: 17px;
+        width: 17px;
+        line-height: 17px;
+    }
+
+    .options.center {
+        gap: 8px;
+    }
+
+    .options.right {
+        gap: 10px;
+    }
+
+    .volume {
+        margin-right: 0px;
+    }
+
+    .video-timer .separator {
+        margin: 0 3.5px;
+        font-size: 16px;
+    }
+
+    .video-timer .current-time,
+    .video-timer .video-duration {
+        font-size: 10.5px;
+    }
+
+    .options input {
+        height: 4px;
+        margin-left: 2.5px;
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 100%;
+        height: 100%;
+        overflow-x: clip;
+    }
+
+    .container,
+    .large-container {
+        padding-left: 7%;
+        padding-right: 5%;
+    }
+
+    .nav-middle .search-box input {
+        width: 200px;
+    }
+
+    .nav-right img {
+        width: 25px;
+        height: 25px;
+        margin-right: 14px;
+    }
+
+    .nav-right .video-icon {
+        width: 30px;
+        height: 25px;
+    }
+
+    .nav-right img:last-child {
+        width: 30px;
+    }
+
+    .nav-left .menu-icon {
+        width: 20px;
+        margin-right: 14px;
+    }
+
+    /* video page */
+    .play-container {
+        padding-left: 1.5%;
+    }
+
+    .play-video-title h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .play-video-info .play-video-links div {
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .play-video-info .play-video-links div p {
+        font-size: 11px;
+        top: 42px;
+        left: -16px;
+        padding: 5px 5px;
+    }
+
+    .options button :where(i, svg, span) {
+        height: 16px;
+        width: 16px;
+        line-height: 16px;
+    }
+
+    .options.center {
+        gap: 5px;
+    }
+
+    .options.right {
+        gap: 5px;
+    }
+
+    .volume {
+        margin-right: -1px;
+    }
+
+    .video-timer .separator {
+        margin: 0 3px;
+        font-size: 15px;
+    }
+
+    .video-timer .current-time,
+    .video-timer .video-duration {
+        font-size: 10px;
+    }
+
+    .options input {
+        height: 3px;
+        margin-left: 2px;
+        max-width: 55px;
+    }
+}
+
+@media (max-width: 700px) {
+
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 100%;
+        height: 100%;
+        overflow-x: clip;
+    }
+
+    .nav {
+        padding: 10px 2.5%;
+    }
+
+    .nav-middle .search-box {
+        margin-left: -25px;
+    }
+
+    .nav-middle .search-box input {
+        width: 150px;
+    }
+
+    .container,
+    .large-container {
+        padding-left: 7%;
+        padding-right: 5%;
+    }
+
+    .sidebar {
+        width: 5%;
+        padding-right: 1%;
+    }
+
+    .nav-right img {
+        width: 24px;
+        height: 24px;
+        margin-right: 13px;
+    }
+
+    .nav-right .video-icon {
+        width: 28px;
+        height: 25px;
+    }
+
+    .nav-right img:last-child {
+        width: 28px;
+    }
+
+    .nav-left .menu-icon {
+        width: 20px;
+        margin-right: 13px;
+    }
+
+    /* video page */
+    /* .play-container {
+        padding-left: 1.5%;
+    }
+
+    .play-video-tags a {
+        font-size: 11px;
+    }
+
+    .play-video-title h3 {
+        font-size: 19px;
+    }
+
+    .play-video-info .play-video-links div {
+        margin-right: 4px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .play-video-info .play-video-links div p {
+        font-size: 10px;
+        top: 42px;
+        left: -18px;
+    } */
+    .play-video {
+        flex-basis: 100%;
+    }
+
+    .right-sidebar {
+        flex-basis: 99%;
+    }
+
+    /* video page */
+    .play-container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .play-video-tags a {
+        font-size: 11px;
+    }
+
+    .play-video-title h3 {
+        font-size: 19px;
+        margin-top: 7px;
+    }
+
+    .play-video-info .play-video-links div {
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .play-video-info .play-video-links div p {
+        font-size: 11px;
+        top: 42px;
+        left: -16px;
+        padding: 5px 5px;
+    }
+
+    .play-video-info p {
+        font-size: 13px;
+    }
+
+    .play-channel .play-channel-info {
+        flex: 1;
+        line-height: 17px;
+    }
+
+    .play-channel img {
+        width: 35px;
+        margin-right: 10px;
+    }
+
+    .play-channel .play-channel-info h3 {
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .play-channel .play-channel-info h3 svg {
+        margin-bottom: -2px;
+    }
+
+    .play-channel .play-channel-info span {
+        font-size: 11px;
+    }
+
+    .play-channel .subscribe-btn {
+        padding: 8px 20px;
+        margin-right: 15px;
+    }
+
+    .chips-container {
+        display: block;
+    }
+
+    .overflow-comment {
+        margin-bottom: 40px;
+    }
+
+    .chips-container {
+        padding: 4px 7px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+        padding-top: 4px;
+    }
+
+    .chips-container .chip-box {
+        gap: 9px;
+    }
+
+    .chips-container .chip-box a {
+        padding: 3px 9px;
+        letter-spacing: 0px;
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    .chips-container .chip-arrow-icon {
+        top: -5px;
+        width: 130px;
+    }
+
+    .chip-arrow-icon div {
+        line-height: 44px;
+    }
+
+    /* banner */
+    .banner {
+        width: 100%;
+    }
+
+    .banner img {
+        height: 180px;
+    }
+
+    .banner-text {
+        top: 20px;
+        left: 25px;
+    }
+
+    .banner-text .banner-para {
+        width: 375px;
+    }
+
+    .banner-text .banner-btn button {
+        padding: 8px 26px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 100%;
+        height: 100%;
+        overflow-x: clip;
+    }
+
+    .nav {
+        padding: 10px 3%;
+    }
+
+    .nav-middle .search-box {
+        margin-left: -40px;
+    }
+
+    .nav-middle .search-box {
+        padding: 7px 10px;
+    }
+
+    .nav-middle .search-box input {
+        width: 170px;
+        padding: 0;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .nav-middle .search-icon {
+        font-size: 12px;
+        width: 15px;
+        stroke: 2;
+    }
+
+    .nav-middle .mic-icon {
+        width: 15px;
+        margin-left: -10px;
+        margin-right: 15px;
+    }
+
+    .container,
+    .large-container {
+        padding-left: 7%;
+        padding-right: 5%;
+    }
+
+    .sidebar {
+        width: 10%;
+        padding-right: 1%;
+    }
+
+    .nav-right img {
+        width: 23px;
+        height: 23px;
+        margin-right: 11px;
+    }
+
+    .nav-right svg {
+        display: none;
+    }
+
+    .nav-right img:last-child {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-left .logo-icon {
+        width: 150px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+    .nav-left .logo-icon sup {
+        font-size: 9.5px;
+    }
+
+    .nav-left .logo-icon img {
+        width: 18px;
+        height: 20px;
+        margin-right: 3px;
+    }
+
+    .nav-left .menu-icon {
+        display: none;
+    }
+
+    .play-video {
+        flex-basis: 100%;
+    }
+
+    .right-sidebar {
+        flex-basis: 99%;
+    }
+
+    /* video page */
+    .play-container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .play-video-tags a {
+        font-size: 11px;
+    }
+
+    .play-video-title h3 {
+        font-size: 19px;
+        margin-top: 7px;
+    }
+
+    .play-video-info .play-video-links div {
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .play-video-info .play-video-links div p {
+        font-size: 11px;
+        top: 42px;
+        left: -16px;
+        padding: 5px 5px;
+    }
+
+    .play-video-info p {
+        font-size: 13px;
+    }
+
+    .play-channel .play-channel-info {
+        flex: 1;
+        line-height: 17px;
+    }
+
+    .play-channel img {
+        width: 35px;
+        margin-right: 10px;
+    }
+
+    .play-channel .play-channel-info h3 {
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .play-channel .play-channel-info h3 svg {
+        margin-bottom: -2px;
+    }
+
+    .play-channel .play-channel-info span {
+        font-size: 11px;
+    }
+
+    .play-channel .subscribe-btn {
+        padding: 8px 20px;
+        margin-right: 15px;
+    }
+
+    .chips-container {
+        display: block;
+    }
+
+    .overflow-comment {
+        margin-bottom: 40px;
+    }
+
+    .chips-container {
+        padding: 4px 7px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+        padding-top: 4px;
+    }
+
+    .chips-container .chip-box {
+        gap: 9px;
+    }
+
+    .chips-container .chip-box a {
+        padding: 3px 9px;
+        letter-spacing: 0px;
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    .chips-container .chip-arrow-icon {
+        top: -5px;
+        width: 130px;
+    }
+
+    .chip-arrow-icon div {
+        line-height: 44px;
+    }
+
+    /* banner */
+    .banner {
+        width: 100%;
+    }
+
+    .banner img {
+        height: 180px;
+    }
+
+    .banner-text {
+        top: 20px;
+        left: 25px;
+    }
+
+    .banner-text .banner-para {
+        width: 375px;
+    }
+
+    .banner-text .banner-btn button {
+        padding: 8px 26px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    /* banner */
+    .banner-text {
+        top: 25px;
+        left: 25px;
+    }
+
+    .banner-text .banner-para {
+        width: 280px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .banner-text .banner-btn button {
+        padding: 5px 20px;
+    }
+
+    .chips-container {
+        padding: 3px 6px;
+        margin-top: -5px;
+        margin-bottom: 9px;
+        padding-top: 3px;
+    }
+
+    .chips-container .chip-box {
+        gap: 9px;
+    }
+
+    .chips-container .chip-box a {
+        padding: 3px 8px;
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    .chips-container .chip-arrow-icon {
+        top: -5px;
+        width: 100px;
+    }
+
+    .container,
+    .large-container {
+        padding-left: 9.5%;
+        padding-right: 5%;
+    }
+
+    .sidebar {
+        width: 20%;
+        padding-right: 1%;
+    }
+
+    /* video page */
+    .play-container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .nav {
+        padding: 9.5px 2%;
+    }
+
+    .nav-middle .search-box {
+        margin-left: -50px;
+    }
+
+    .nav-middle .search-box {
+        padding: 5px 8px;
+    }
+
+    .nav-middle .search-box input {
+        width: 125px;
+        padding: 0;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .nav-middle .search-icon {
+        font-size: 12px;
+        width: 14px;
+        stroke: 2;
+    }
+
+    .nav-middle .mic-icon {
+        width: 14px;
+        margin-left: -13px;
+    }
+
+    .nav-left .logo-icon {
+        width: 130px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        font-size: 17px;
+    }
+
+    .nav-left .logo-icon sup {
+        font-size: 9px;
+    }
+
+    .nav-left .logo-icon img {
+        width: 17px;
+        height: 19px;
+        margin-right: 2px;
+    }
+
+    .play-video-info .play-video-links div {
+        margin-right: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    .play-video-info .play-video-links div p {
+        font-size: 11px;
+        top: 42px;
+        left: -16px;
+        padding: 5px 5px;
+    }
+
+    .play-video-info p {
+        font-size: 13px;
+    }
+
+    .video-container {
+        grid-row-gap: 18px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .container,
+    .large-container {
+        padding-left: 12%;
+        padding-right: 5%;
+    }
+
+    .sidebar {
+        width: 10%;
+        padding-left: 2.5%;
+        padding-right: 1%;
+    }
+
+    .chips-container {
+        padding: 3px 6px;
+        margin-bottom: 8px;
+    }
+
+    .chips-container .chip-box {
+        gap: 7px;
+    }
+
+    .chips-container .chip-box a {
+        padding: 0 6px;
+        width: 100%;
+        padding-top: 8px;
+        font-size: 12px;
+    }
+
+    .chips-container .chip-arrow-icon {
+        top: -5px;
+        width: 75px;
+    }
+
+    .nav {
+        padding: 9px 2%;
+    }
+
+    .nav-middle .search-box {
+        margin-left: -30px;
+    }
+
+    .nav-middle .search-box {
+        padding: 5px 8px;
+        margin-right: 15px;
+    }
+
+    .nav-middle .search-box input {
+        width: 100px;
+        padding: 0;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .nav-middle .search-icon {
+        font-size: 12px;
+        width: 14px;
+        stroke: 2;
+    }
+
+    .nav-middle .mic-icon {
+        width: 14px;
+        margin-left: -13px;
+    }
+
+    .nav-left .logo-icon {
+        width: 120px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        font-size: 16px;
+    }
+
+    .nav-left .logo-icon sup {
+        font-size: 8.5px;
+    }
+
+    .nav-left .logo-icon img {
+        width: 17px;
+        height: 19px;
+        margin-right: 2px;
+    }
+
+    /* video page */
+    .play-container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .play-channel .play-channel-info {
+        flex: 1;
+        line-height: 16px;
+    }
+
+    .play-channel img {
+        width: 30px;
+        margin-right: 6px;
+    }
+
+    .play-channel .play-channel-info h3 {
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .play-channel .play-channel-info h3 svg {
+        margin-bottom: -2px;
+    }
+
+    .play-channel .play-channel-info span {
+        font-size: 10px;
+    }
+
+    .play-channel .subscribe-btn {
+        padding: 8px 15px;
+        margin-right: 10px;
+    }
+
+    .flex-div2 svg {
+        margin-bottom: -20px;
+    }
+
+    .play-video-info .play-video-links div {
+        margin-right: 6px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .play-video-info .play-video-links div p {
+        font-size: 9px;
+        top: 32px;
+        left: -24px;
+        padding: 5px 0;
+    }
+
+    .play-video-info p {
+        font-size: 11px;
+    }
+}
+
+
+.show {
+    display: block;
+}
+
+.pointer {
+    cursor: pointer;
+}
